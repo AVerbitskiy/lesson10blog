@@ -1,6 +1,5 @@
-$('.grid').masonry({
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-sizer',
-    gutter: '.gutter-sizer',
-    percentPosition: true
+$(document).ready(function(){
+	$('.bxslider').bxSlider({
+		pagerCustom: '#bx-pager'
+	});
 });

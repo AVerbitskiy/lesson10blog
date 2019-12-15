@@ -1,0 +1,400 @@
+body {
+  font-family: "Century Gothic Bold", Sans-serif;
+  font-size: 13px;
+  background-color: #F6F6F6;
+  color: #FFF; }
+
+/*-----------------------------------------HEADER----------------------------------*/
+.container-fluid {
+  max-width: 1394px; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+header
+.nav-item {
+  margin-left: 80px; }
+
+header
+.navbar
+.nav-link {
+  color: #000;
+  font-family: "Century Gothic Bold", Sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.6px; }
+  header
+  .navbar
+  .nav-link .nav-link:hover {
+    transition: 1s;
+    color: #4E4D4D;
+    background-color: #FFEA00;
+    padding: 8px 8px; }
+
+.navbar .active {
+  background-color: #FFEA00; }
+
+.navbar-toggler {
+  font-size: 14px; }
+
+/*-----------------------------------------TOP BLOG----------------------------------*/
+.row {
+  margin: 0; }
+
+.top-blog .bg-blog h2 {
+  color: #FFEA00;
+  font-family: "Century Gothic Bold", Sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 21px;
+  text-transform: uppercase; }
+
+.bg-blog {
+  background: url("../img/blog/slider_bg.png");
+  margin-bottom: 80px; }
+  .bg-blog h2 {
+    padding: 20px 100px 20px 20px;
+    background-color: #4E4D4D;
+    margin: 40px 0; }
+
+/*-----------------------------------------MAIN----------------------------------*/
+.main {
+  display: flex;
+  flex-wrap: wrap; }
+
+.categories h2, .posts h2, .tags h2, .archive h2 {
+  color: #FFEA00;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21px;
+  text-transform: uppercase;
+  background-color: #414146;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-bottom: 25px; }
+
+.wooden p {
+  background-color: #FFEA00;
+  color: #000;
+  font-family: "Century Gothic";
+  font-size: 21px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 28px;
+  padding: 10px 45px 0 45px; }
+  .wooden p:last-child {
+    font-size: 11px;
+    text-align: right;
+    padding: 0 10px 5px 0;
+    line-height: 10px; }
+
+.posts img {
+  width: 100px;
+  height: 70px; }
+
+.tags, .posts, .categories, .archive, .form-group {
+  background-color: #414146;
+  margin-bottom: 30px;
+  padding: 35px; }
+  .tags h2, .posts h2, .categories h2, .archive h2, .form-group h2 {
+    padding-left: 0; }
+
+.posts ul li:last-child {
+  margin-bottom: 0; }
+
+.archive li, .categories li, .posts li {
+  padding-bottom: 15px;
+  padding-left: 0; }
+  .archive li a, .categories li a, .posts li a {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding-left: 15px; }
+
+.form-group {
+  background-color: #414146;
+  justify-content: center; }
+  .form-group input {
+    border-radius: 20px;
+    width: 320px; }
+
+.blog {
+  margin-bottom: 30px; }
+
+.posts li a p {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding-left: 15px; }
+
+.posts li a p:last-child {
+  text-align: right;
+  color: #FFEA00;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-top: -10px; }
+
+.posts li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px; }
+  .posts li:last-child {
+    padding-bottom: 0; }
+  .posts li a:last-child {
+    justify-content: flex-end; }
+
+.categories li a:hover {
+  color: #5E45DD;
+  text-decoration: none;
+  transition: 1s; }
+
+.archive li a:hover {
+  color: #5E45DD;
+  text-decoration: none;
+  transition: 1s; }
+
+.posts li a p:hover {
+  color: #5E45DD;
+  text-decoration: none;
+  transition: 1s; }
+
+.icon-right-open-big:before {
+  content: "";
+  padding: 4px 6px;
+  background-color: #FFEA00;
+  color: #414146; }
+
+.tags ul {
+  display: flex;
+  flex-wrap: wrap; }
+  .tags ul li {
+    background-color: #FFEA00;
+    padding: 3px 5px;
+    margin: 0 3px 2px 0;
+    color: #414146;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase; }
+
+.main .row {
+  align-items: start; }
+
+.card-block {
+  background-color: #FFEA00;
+  padding: 25px; }
+
+.card-block .card-title {
+  color: #000;
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase; }
+
+.card-block .card-text {
+  color: #4E4D4D;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px; }
+
+.card-block a p {
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: right; }
+  .card-block a pspan {
+    text-align: left; }
+
+.main nav li a {
+  color: #414146;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 21px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #F6F6F6; }
+
+.main .pagination .active a {
+  background-color: #FFEA00; }
+
+.pagination {
+  margin: 60px 0; }
+
+.posts li a picture {
+  padding-left: 0; }
+
+/*-----------------------------------------FOOTER----------------------------------*/
+.footer-top {
+  background-color: #414146;
+  padding-bottom: 30px;
+  line-height: 21px; }
+
+.footer-top .row {
+  margin: 0; }
+
+.footer-top h2 {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  padding: 35px 10px 35px 0;
+  margin: 0; }
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #4E4D4D;
+  background-color: #FFEA00; }
+
+.nav-item:hover {
+  color: #4E4D4D;
+  background-color: #FFEA00; }
+
+.nav-tabs {
+  border-bottom: none; }
+
+.footer-top .left .about a {
+  font-weight: bold;
+  line-height: 38px;
+  color: #FFF;
+  background-color: #000;
+  border-bottom: 3px solid #FFEA00;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 5px 15px; }
+
+.footer-top p {
+  padding-bottom: 15px; }
+
+.footer-top .photo li {
+  padding: 2px; }
+
+.photo .row {
+  margin-left: 0; }
+
+.footer-top .tweets p a {
+  color: #FFF;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 21px; }
+
+.footer-top .tweets span {
+  color: #FFEA00; }
+
+.footer-top .left, .center, .right {
+  padding: 0 1%; }
+
+.footer-top .tweets p {
+  padding: 0 0 0 40px;
+  margin: 0; }
+
+.footer-top .days-ago {
+  color: #FFEA00;
+  font-size: 8px;
+  font-weight: bold;
+  line-height: 21px; }
+
+.tweets .row li {
+  margin-bottom: 15px; }
+
+.tweets .row p:first-child {
+  background: url(../img/blog/twitter-icon.png) left no-repeat;
+  padding: 0 0 0 40px; }
+
+.footer-top .social a {
+  color: #FFF;
+  background-color: #000;
+  padding: 5px 5px 0; }
+
+.footer-top .social a:hover {
+  color: #5E45DD;
+  text-decoration: none; }
+
+.social ul {
+  display: flex;
+  align-items: center; }
+
+.social ul li {
+  padding: 1px; }
+
+.follow input {
+  border: none;
+  border-bottom: 2px solid #FFEA00;
+  background-color: transparent; }
+
+.icon-envelope-o, .icon-phone, .icon-map-marker {
+  color: #FFF;
+  background-color: #000;
+  padding: 5px 7px;
+  margin-right: 20px; }
+
+.tel a:hover, .mail a:hover {
+  color: #5E45DD;
+  transition: 1s; }
+
+.contact a {
+  color: #F6F6F6;
+  font-family: "Century Gothic Bold", Sans-serif;
+  font-size: 13px; }
+
+.button .icon-envelope-o:hover {
+  background-color: #5E45DD;
+  transition: 1s; }
+
+.tel p:last-child {
+  margin-left: 46%;
+  padding-top: 0;
+  margin-top: -20px; }
+
+.footer-bottom {
+  background-color: #000; }
+
+.footer-bottom p {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 32px;
+  margin: 0; }
+
+.footer-bottom .nav-item {
+  margin-left: 80px; }
+
+.footer-bottom li {
+  text-transform: uppercase; }
+
+.footer-bottom .navbar-dark {
+  padding: 15px 0; }
+
+.footer-bottom .navbar .nav-link:hover {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  color: #4E4D4D;
+  background-color: #FFEA00; }
+
+/*-----------------------------------------MEDIA----------------------------------*/
+@media (min-width: 576px) {
+  .navbar-toggler {
+    font-size: 24px; } }
+@media (min-width: 1200px) {
+  header .navbar .nav-link {
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 1.6px; }
+
+  .portfolio .title-post h1 {
+    font-size: 35px; }
+
+  .portfolio .title-post p {
+    font-size: 24px; }
+
+  .image {
+    padding: 30px 10px; } }
+
+/*# sourceMappingURL=styleblog.css.map */

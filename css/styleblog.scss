@@ -1,0 +1,488 @@
+@import "variables";
+
+body {
+  font-family: $font;
+  font-size: 13px;
+  background-color: $bgcolor;
+  color: $white;
+}
+
+/*-----------------------------------------HEADER----------------------------------*/
+
+.container-fluid {
+  max-width: 1394px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+header
+  .nav-item {
+    margin-left: 80px;
+}
+
+header
+  .navbar
+  .nav-link {
+    color: $black;
+    font-family: $font;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    .nav-link:hover {
+      transition: 1s;
+      color: $grey;
+      background-color: $yellow;
+      padding: 8px 8px;
+  }
+}
+
+.navbar .active {
+  background-color: $yellow;
+}
+
+.navbar-toggler {
+  font-size: 14px;
+}
+
+/*-----------------------------------------TOP BLOG----------------------------------*/
+
+.row {
+  margin: 0;
+}
+
+.top-blog .bg-blog h2 {
+  color: $yellow;
+  font-family: $font;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.bg-blog {
+  background: url("../img/blog/slider_bg.png");
+  margin-bottom: 80px;
+  h2 {
+    padding: 20px 100px 20px 20px;
+    background-color: $grey;
+    margin: 40px 0;
+  }
+}
+
+/*-----------------------------------------MAIN----------------------------------*/
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categories h2, .posts h2, .tags h2, .archive h2{
+  color: $yellow;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21px;
+  text-transform: uppercase;
+  background-color: $color;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.wooden p {
+  background-color: $yellow;
+  color: $black;
+  font-family: "Century Gothic";
+  font-size: 21px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 28px;
+  padding: 10px 45px 0 45px;
+  &:last-child {
+    font-size: 11px;
+    text-align: right;
+    padding: 0 10px 5px 0;
+    line-height: 10px;
+  }
+}
+
+.posts img {
+  width: 100px;
+  height: 70px;
+}
+
+.tags, .posts, .categories, .archive, .form-group {
+  background-color: $color;
+  margin-bottom: 30px;
+  padding: 35px;
+  h2 {
+    padding-left: 0;
+  }
+}
+
+.posts ul li:last-child{
+  margin-bottom: 0;
+}
+
+.archive li, .categories li, .posts li {
+  padding-bottom: 15px;
+  padding-left: 0;
+  a {
+    color: $white;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding-left: 15px;
+  }
+}
+
+.form-group {
+  background-color: $color;
+  justify-content: center;
+  input {
+    border-radius: 20px;
+    width: 320px;
+  }
+}
+
+.blog{
+  margin-bottom: 30px;
+}
+
+.posts li a p {
+  color: $white;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+
+.posts li a p:last-child {
+  text-align: right;
+  color: $yellow;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-top: -10px;
+}
+
+.posts li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  &:last-child {
+  padding-bottom: 0;
+  }
+  a:last-child {
+    justify-content: flex-end;
+  }
+}
+
+.categories li a:hover{
+  color: $hover;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.archive li a:hover{
+  color: $hover;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.posts li a p:hover{
+  color: $hover;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.icon-right-open-big:before {
+  content: "";
+  padding: 4px 6px;
+  background-color: $yellow;
+  color: $color;
+}
+
+.tags ul {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    background-color: $yellow;
+    padding: 3px 5px;
+    margin: 0 3px 2px 0;
+    color: $color;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+
+.main .row {
+  align-items: start;
+}
+
+.card-block {
+  background-color: $yellow;
+  padding: 25px;
+}
+
+.card-block .card-title {
+  color: $black;
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.card-block .card-text {
+  color: $grey;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.card-block a p {
+  color: $black;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: right;
+  &span {
+    text-align: left;
+  }
+}
+
+.main nav li a {
+  color: $color;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 21px;
+  text-transform: uppercase;
+  border: none;
+  background-color: $bgcolor
+}
+
+.main .pagination .active a{
+  background-color: $yellow;
+}
+
+.pagination {
+  margin: 60px 0;
+}
+
+.posts li a picture {
+  padding-left: 0;
+}
+/*-----------------------------------------FOOTER----------------------------------*/
+.footer-top {
+  background-color: $color;
+  padding-bottom: 30px;
+  line-height: 21px;
+}
+.footer-top .row {
+  margin: 0;
+}
+
+.footer-top h2 {
+  color: $white;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  padding: 35px 10px 35px 0;
+  margin: 0;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: $grey;
+  background-color: $yellow;
+}
+
+.nav-item:hover {
+  color: $grey;
+  background-color: $yellow;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.footer-top .left .about a  {
+  font-weight: bold;
+  line-height: 38px;
+  color: $white;
+  background-color: $black;
+  border-bottom: 3px solid $yellow;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 5px 15px;
+}
+
+.footer-top p {
+  padding-bottom: 15px ;
+}
+
+.footer-top .photo li {
+  padding: 2px;
+}
+
+.photo .row {
+  margin-left: 0;
+}
+
+.footer-top .tweets p a{
+  color: $white;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 21px;
+}
+
+.footer-top .tweets span {
+  color: $yellow;
+}
+
+.footer-top .left, .center, .right {
+  padding: 0 1%;
+}
+
+.footer-top .tweets p {
+  padding: 0 0 0 40px;;
+  margin: 0;
+}
+
+.footer-top .days-ago{
+  color: $yellow;
+  font-size: 8px;
+  font-weight: bold;
+  line-height: 21px;
+}
+
+.tweets .row li{
+  margin-bottom: 15px;
+}
+
+.tweets .row p:first-child{
+  background: url(../img/blog/twitter-icon.png) left no-repeat;
+  padding: 0 0 0 40px;
+}
+
+.footer-top .social a {
+  color: $white;
+  background-color: $black;
+  padding: 5px 5px 0;
+}
+
+.footer-top .social a:hover {
+  color: $hover;
+  text-decoration: none;
+}
+
+.social ul {
+  display: flex;
+  align-items: center;
+}
+
+.social ul li{
+  padding:1px;
+}
+
+.follow input {
+  border: none;
+  border-bottom: 2px solid $yellow;
+  background-color: transparent;
+}
+
+.icon-envelope-o, .icon-phone, .icon-map-marker {
+  color: $white;
+  background-color: $black;
+  padding: 5px 7px;
+  margin-right: 20px;
+}
+
+.tel a:hover, .mail a:hover {
+  color: $hover;
+  transition: 1s;
+}
+
+.contact a {
+  color: $bgcolor;
+  font-family: $font;
+  font-size: 13px;
+}
+
+.button .icon-envelope-o:hover {
+  background-color: $hover;
+  transition: 1s;
+}
+
+.tel p:last-child {
+  margin-left: 46%;
+  padding-top: 0;
+  margin-top: -20px;
+}
+
+.footer-bottom {
+  background-color: $black;
+}
+
+.footer-bottom p {
+  color: $white;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 32px;
+  margin: 0;
+}
+
+.footer-bottom .nav-item {
+  margin-left: 80px;
+}
+
+.footer-bottom li {
+  text-transform: uppercase;
+}
+
+.footer-bottom .navbar-dark {
+  padding: 15px 0;
+}
+
+.footer-bottom .navbar .nav-link:hover {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  color: $grey;
+  background-color: $yellow;
+}
+
+/*-----------------------------------------MEDIA----------------------------------*/
+
+@media (min-width: 576px) {
+
+.navbar-toggler {
+  font-size: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+header .navbar .nav-link {
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 1.6px;
+}
+
+.portfolio .title-post h1 {
+  font-size: 35px;
+}
+
+.portfolio .title-post p {
+  font-size: 24px;
+}
+
+.image {
+  padding: 30px 10px;
+}
+}
